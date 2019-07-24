@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+}
+/*--top-nav--*/
+.top-nav-wrapper {
+  padding-bottom: 2%;
+  position: sticky;
+  top: 0;
+  border: 2px solid black;
+  width: 100%;
+  background-color: black;
+  opacity: 0.8;
+  z-index: 1;
+}
+ul li {
+  display: inline-block;
+  padding-left: 11%;
+}
+ul li a:hover {
+  color: #017bb3;
+}
+ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+img {
+  width: 100%;
+}
+.home-img h1 {
+  padding: 25%;
+  color: #017bb3;
+  font-size: 50px;
+}
+.home-img {
+  background-image: url("./img1/photo-1495606818265-9a3a58138e95.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-origin: border-box;
+  background-size: 100% 100%;
+}
+/*--header -contact--*/
+.about-wrapper {
+  background-color: #017bb3;
+  padding: 1%;
+}
+.about-row {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 2%;
+  color: #fff;
+}
+.icon {
+  display: inline;
+  padding-right: 3%;
+}
+.icon button {
+  border: 1px solid black;
+  height: 100%;
+  border-radius: 5px;
+  background-color: black;
+  color: #fff;
+  padding-left: 10%;
+  padding-right: 10%;
+  cursor: pointer;
+}
+.icon a button {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+.icon button:hover {
+  background-color: #017bb3;
+  color: #fff;
+  border-color: #fff;
+}
+.contact {
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+}
+/*--about-us--*/
+.about-us-wrapper {
+  background-color: transparent;
+  padding-bottom: 7%;
+  background-color: rgb(51, 44, 44);
+  background-image: url("./img1/photo-1495475973814-1f767e1f1fc6.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-size: 100% 100%;
+  padding-top: 3%;
+}
+.about-us-row {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding-left: 3%;
+  padding-top: 5%;
+}
+.about-img {
+  display: grid;
+  grid-template-columns: auto;
+  padding-left: 3%;
+}
+.about-content h1 {
+  padding-bottom: 3%;
+  color: #017bb3;
+}
+.about-content p {
+  color: #fff;
+  line-height: 1.5em;
+  padding-bottom: 5%;
+}
+.about-img img {
+  width: 80%;
+  padding-top: 11%;
+  margin-left: 5%;
+  height: 170%;
+}
+.about-img {
+  overflow: hidden;
+}
+.about-content button {
+  padding: 1%;
+  background-color: #017bb3;
+  border-radius: 5px;
+  color: #fff;
+  border: 1px solid #017bb3;
+  cursor: pointer;
+}
+.about-content a button:hover {
+  background-color: #fff;
+  border-color: #017bb3;
+  color: #017bb3;
+}
+/*--services-section--*/
+.service-content {
+  padding: 2%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+.service-content h1 {
+  text-align: center;
+  color: #017bb3;
+  padding-bottom: 3%;
+  font-size: 2em;
+  padding-top: 5%;
+}
+.service-items h2 {
+  text-align: center;
+  color: black;
+}
+.service-content p {
+  padding-left: 4%;
+  padding-right: 4%;
+}
+.service-items {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px 20px;
+  padding: 2%;
+}
+.row1 {
+  border: 1px solid black;
+  padding: 4%;
+  background-color: #017bb3;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px black;
+}
+.row1 img {
+  border-radius: 50%;
+  width: 60%;
+  position: relative;
+  left: 20%;
+}
+/*gallery-section*/
+.row2 img {
+  border-radius: 0;
+  width: 100%;
+}
+.row2 img:hover {
+  opacity: 0.6;
+}
+.social-icon .icons {
+  display: inline-block;
+  padding-left: 1%;
+  position: relative;
+  left: 42%;
+}
+.footer-wrapper {
+  background-color: #017bb3;
+  padding: 5%;
+}
+.social-icon .icons i {
+  color: #fff;
+}
+.footer-wrapper p {
+  text-align: center;
+  padding-top: 2%;
+  color: #fff;
+}
+/*--media query--*/
+/*--smart-phone--*/
+@media only screen and (max-width: 600px) {
+  .about-wrapper {
+    display: none;
+  }
+  .top-nav-wrapper #toggle {
+    display: inline;
+    color: white;
+    position: relative;
+    left: 5%;
+  }
+  .about-us-row,
+  .service-items {
+    display: block;
+  }
+  .social-icon {
+    position: relative;
+    right: 12%;
+  }
+  .service-content h2 {
+    font-size: 15px;
+  }
+  .service-content p {
+    font-size: 13px;
+  }
+  .about-content p {
+    font-size: 13px;
+  }
+  .row1 {
+    margin-bottom: 4%;
+  }
+  ul li {
+    display: block;
+  }
+}
