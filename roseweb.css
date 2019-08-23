@@ -74,6 +74,10 @@ footer {
 i {
   color: #fff;
 }
+h2,
+h1 {
+  font-family: "Handlee", cursive;
+}
 /*--media--*/
 @media only screen and (max-width: 768px) {
   #contact {
