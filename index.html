@@ -2,125 +2,163 @@
 <html>
 
 <head>
+    <title>Website</title>
     <meta charset="utf=8">
     <meta name="viewport" content="width=device-width ,initial-scale=1">
     <link rel="stylesheet" href="roseweb.css">
-    <!--font awesome cdn link-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <title>
-        Rosesweb
-    </title>
-    <script src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 </head>
 
 <body>
     <!--top-nav-->
-    <div class="home-img" id="#home">
+    <header id="home" class="background-img ">
+        <!-- <div class="overlay "> -->
+        <div class="container-fluid fixed-top bg-dark">
+            <nav class="container navbar navbar-expand-sm  navbar-dark">
+                <!-- Brand -->
+                <a class="navbar-brand" href="#"><img src="./img1/images.jpg " class="rounded-circle" width="60px"></a>
 
-        <div class="top-nav-wrapper">
-            <div id="toggle"><i class="fas fa-bars"></i></div>
-            <nav>
-                <div class="top-nav">
-                    <ul>
-                        <li class="nav-items"><a href="#home">Home</a></li>
-                        <li class="nav-items"><a href="#about">About Us</a></li>
-                        <li class="nav-items"><a href="#service">Services</a></li>
-                        <li class="nav-items"><a href="#gallery">Gallery</a></li>
-                        <li class="nav-items"><a href="#contact">Contact</a></li>
+                <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse  d-md-flex justify-content-md-end align-content-md-end "
+                    id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item pl-4">
+                            <a class="nav-link" href="#home">HOME</a>
+                        </li>
+                        <li class="nav-item pl-4">
+                            <a class="nav-link" href="#about">ABOUT US</a>
+                        </li>
+                        <li class="nav-item pl-4">
+                            <a class="nav-link" href="#services">SERVICES</a>
+                        </li>
+                        <li class="nav-item pl-4">
+                            <a class="nav-link" href="#gallery">GALLERY</a>
+                        </li>
+                        <li class="nav-item pl-4">
+                            <a class="nav-link" href="#contacts">CONTACT US</a>
+                        </li>
                     </ul>
-
                 </div>
             </nav>
         </div>
-        <h1>
-            <pre>Welcome to our website</pre>
-        </h1>
-    </div>
-    <!--header-contact-->
-    <header>
-        <div class="about-wrapper">
-            <div class="about-row">
-                <div class="contact">
-                    <div class="icon"><i class="fa fa-phone fa-1x" aria-hidden="true"></i></div>
-                    7346789899
-                </div>
-                <div class="contact">
-                    <div class="icon"><i class="fa fa-map-marker-alt fa-2x" aria-hidden="true"></i></div>
-                    punjab
-                </div>
-                <div class="contact">
-                    <div class="icon"><i class="fas fa-clock fa-2x" aria-hidden="true"></i></div>
-                </div>
-                <div class="contact">
-                    <div class="icon"><a href=""><button>Contact Us</button></a></div>
+        </div>
+        <div class="d-flex justify-content-center flex-column align-items-center">
+            <h1 class="text-center text-white heading">Welcome to our website</h1>
+            <button type="button" class="btn btn-outline-dark pl-4 pr-4 text-white">Read More..</button>
+        </div>
+    </header>
+    <!--contact-section-->
+    <section id="contact">
+        <div class="container-fluid bg-dark pb-4 pt-4 ">
+            <div class="container pt-4 pb-4">
+                <div class="row  text-white ">
+                    <div class="col-md-3 ">
+                        <i class="fa fa-phone fa-2x pr-2" aria-hidden="true"></i> 0120 435 5169
+                    </div>
+                    <div class="col-md-3 ">
+                        <i class="fa fa-map-marker fa-2x pr-2" aria-hidden="true"></i>A-42/6 Pinnacle Tower
+
+                    </div>
+                    <div class="col-md-3 ">
+                        <i class="fas fa-clock fa-2x pr-2" aria-hidden="true"></i>
+                        9:30Am to 6:30Pm
+
+                    </div>
+                    <div class="col-md-3 ">
+                        <i class="fa fa-envelope  fa-2x pr-2" aria-hidden="true"></i>
+                        abc@gmail.com
+                    </div>
                 </div>
             </div>
         </div>
-    </header>
+    </section>
     <!--about-section-->
     <section id="about">
-        <div class="about-us-wrapper">
-            <div class="about-us-row">
-                <div class="about-content">
-                    <h1>ABOUT US</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus vitae accusamus ipsa odio!
-                        Dolor, blanditiis iusto quibusdam ullam veniam impedit,
-                        maxime repellendus quidem explicabo hic quasi, necessitatibus alias. Aut, explicabo? Lorem ipsum
-                        dolor sit amet consectetur adipisicing elit. Saepe porro animi maxime eligendi cum assumenda
-                        aperiam, voluptates deleniti ipsum obcaecati
-                        libero aliquid ipsa ipsam laboriosam voluptatibus labore nulla, necessitatibus perferendis?</p>
-                    <a href=""><button>Read More..</button></a>
-                </div>
-                <div class="about-img">
-                    <img src="./img1/photo-1529522560205-b5aef3f46189.jfif">
+        <div class="container-fluid">
+            <div class="container pt-4 pb-4">
+                <div class="row">
+                    <div class="col-md-6 ">
+                        <h1 class="heading">ABOUT US</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus vitae accusamus ipsa
+                            odio!
+                            Dolor, blanditiis iusto quibusdam ullam veniam impedit,
+                            maxime repellendus quidem explicabo hic quasi, necessitatibus alias. Aut, explicabo? Lorem
+                            ipsum
+                            dolor sit amet consectetur adipisicing elit. Saepe porro animi maxime eligendi cum assumenda
+                            aperiam, voluptates deleniti ipsum obcaecati
+                            libero aliquid ipsa ipsam laboriosam voluptatibus labore nulla, necessitatibus perferendis?
+                        </p>
+                        <button type="button" class="btn btn-outline-dark pl-4 pr-4 ">Read More..</button>
+                    </div>
+                    <div class="col-md-6 p-2">
+                        <img src="./img1/photo-1529522560205-b5aef3f46189.jfif" class="img-fluid ">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <!--services-section-->
-    <section id="service">
-        <div class="service-wrapper">
-            <div class="service-content service-content-color">
-                <h1>Our Services</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam veniam cum similique ipsam harum
-                    maxime. Corporis obcaecati quibusdam
-                    <pre>                                   dignissimos deleniti eveniet explicabo delectus in tempora recusandae voluptatibus, porro, vero reiciendis.</pre>
-                </p>
-                <div class="service-items">
-                    <div class="row1"> <img src="./img1/photo-1529522560205-b5aef3f46189.jfif">
+    <section id="services" class="bg-dark">
+        <div class="container-fluid pt-4 pb-4">
+            <h1 class="text-center services-head heading pb-2">Our Services</h1>
+            <div class="container pt-4 pb-2">
+                <div class="row  ">
+                    <div class="col-md-4 content">
+                        <img src="./img1/photo-1529522560205-b5aef3f46189.jfif" class="img-fluid rounded-circle"
+                            width="60%">
                         <h2>LOREM</h2>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae magni animi nemo nisi neque,
                             iusto amet qui impedit,
                             aliquid dolorem quia ea quod eos</p>
                     </div>
-                    <div class="row1"> <img src="./img1/red_rose_and_white_rose_petals_stock_photo_166709.jpg">
+                    <div class="col-md-4 content"><img
+                            src="./img1/red_rose_and_white_rose_petals_stock_photo_166709.jpg"
+                            class="img-fluid rounded-circle" width="60%">
                         <h2>LOREM</h2>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae magni animi nemo nisi neque,
                             iusto amet qui impedit,
                             aliquid dolorem quia ea quod eos</p>
                     </div>
-                    <div class="row1"> <img src="./img1/photo-1529522560205-b5aef3f46189.jfif">
+                    <div class="col-md-4 content"><img src="./img1/photo-1529522560205-b5aef3f46189.jfif"
+                            class="img-fluid rounded-circle" width="60%">
                         <h2>LOREM</h2>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae magni animi nemo nisi neque,
                             iusto amet qui impedit,
                             aliquid dolorem quia ea quod eos</p>
                     </div>
-                    <div class="row1"> <img src="./img1/red_rose_and_white_rose_petals_stock_photo_166709.jpg">
-                        <h2>LOREM</h2>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae magni animi nemo nisi neque,
-                            iusto amet qui impedit,
-                            aliquid dolorem quia ea quod eoslorem</p>
-                    </div>
-                    <div class="row1"> <img src="./img1/photo-1529522560205-b5aef3f46189.jfif">
+                </div>
+                <div class="row ">
+                    <div class="col-md-4 content">
+                        <img src="./img1/photo-1529522560205-b5aef3f46189.jfif" class="img-fluid rounded-circle"
+                            width="60%">
                         <h2>LOREM</h2>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae magni animi nemo nisi neque,
                             iusto amet qui impedit,
                             aliquid dolorem quia ea quod eos</p>
                     </div>
-                    <div class="row1"> <img src="./img1/red_rose_and_white_rose_petals_stock_photo_166709.jpg">
+                    <div class="col-md-4 content"><img
+                            src="./img1/red_rose_and_white_rose_petals_stock_photo_166709.jpg"
+                            class="img-fluid rounded-circle" width="60%">
+                        <h2>LOREM</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae magni animi nemo nisi neque,
+                            iusto amet qui impedit,
+                            aliquid dolorem quia ea quod eos</p>
+                    </div>
+                    <div class="col-md-4 content"><img src="./img1/photo-1529522560205-b5aef3f46189.jfif"
+                            class="img-fluid rounded-circle" width="60%">
                         <h2>LOREM</h2>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae magni animi nemo nisi neque,
                             iusto amet qui impedit,
@@ -130,51 +168,42 @@
             </div>
         </div>
     </section>
-    <!--gallERY-section-->
+    <!--gallery-->
     <section id="gallery">
-        <div class="gallery-wrapper service-wrapper">
-            <div class="gallery-content service-content service-content-colors">
-                <h1>Our Gallery</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam veniam cum similique ipsam harum
-                    maxime. Corporis obcaecati quibusdam
-                    <pre>                                   dignissimos deleniti eveniet explicabo delectus in tempora recusandae voluptatibus, porro, vero reiciendis.</pre>
-                </p>
-                <div class="gallery-items service-items">
-                    <div class="row2 ">
-                        <img src="./img1/roses-821705__340.jpg">
-                    </div>
-                    <div class="row2 ">
-                        <img src="./img1/roses-821705__340.jpg">
-                    </div>
-                    <div class="row2 ">
-                        <img src="./img1/roses-821705__340.jpg">
-                    </div>
-                    <div class="row2 ">
-                        <img src="./img1/roses-821705__340.jpg">
-                    </div>
-                    <div class="row2 ">
-                        <img src="./img1/roses-821705__340.jpg">
-                    </div>
-                    <div class="row2 ">
-                        <img src="./img1/roses-821705__340.jpg">
-                    </div>
+        <div class="container-fluid pt-4 pb-4">
+            <h1 class="text-center pb-2 heading">Our Gallery</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4"> <img src="./img1/img2.jpg" class="img-fluid"></div>
+                    <div class="col-md-4"> <img src="./img1/img3.jpg" class="img-fluid"></div>
+                    <div class="col-md-4"> <img src="./img1/img4.jpg" class="img-fluid"></div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-4"> <img src="./img1/img5.jpg" class="img-fluid"> </div>
+
+                    <div class="col-md-4"> <img src="./img1/img6.jpg" class="img-fluid"></div>
+                    <div class="col-md-4"> <img src="./img1/img7.jpg" class="img-fluid"></div>
                 </div>
             </div>
         </div>
     </section>
-    <!---section-footer-->
-    <footer id="contact">
-        <div class="footer-wrapper">
-            <div class="social-icon">
-                <div class="icons"><a href=""><i class="fab fa-facebook-f fa-2x"></i></a></div>
-                <div class="icons"><a href=""><i class="fab fa-whatsapp fa-2x"></i></a></div>
-                <div class="icons"><a href=""><i class="fab fa-twitter fa-2x"></i></a></div>
-                <div class="icons"><a href=""><i class="fab fa-google fa-2x" aria-hidden="true"></i></a></div>
+    <!--social-section-->
+    <footer id="contacts">
+        <div class="container-fluid ">
+            <div class="row  text-white pt-2 pb-2 pr-lg-4">
+                <div class="col-md-6 d-flex  justify-content-start align-items-start connected-div">
+                    <p class=" pt-3 pr-4 connected-p">STAY CONNECTED:</p><a href=""><i
+                            class="fab fa-linkedin-in  mt-3"></i></a><a href=""><i class="fa fa-twitter ml-4 mt-3"
+                            aria-hidden="true"></i></a><a href="#"><i
+                            class=" fab  fa-facebook-f aria-hidden=true ml-4 mt-3"></i></a>
+                </div>
+                <div class="col-md-6 d-flex justify-content-center align-items-center ">
+                    <p class="rights pt-3">&copy 2013 roseweb.com. All rights
+                        reserved.</p>
+                </div>
             </div>
-            <p>All rights reserved &copy;</p>
         </div>
     </footer>
-
 </body>
 
 </html>
